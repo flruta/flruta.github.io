@@ -373,122 +373,6 @@ at <a href="http://columbia.edu">Columbia University</a>. I am being advised by 
       </td>
     </tr>
 
-    <tr>
-      <td width="25%">
-        <img src='Images/overfitting.png' width="320" height="250">
-      </td>
-      <td valign="top" width="75%">
-          <p>
-          <a href="Papers/noisin.pdf">
-            <papertitle>Noisin: Unbiased Regularization for Recurrent Neural Networks</papertitle>
-          </a>
-          <br>
-          <strong>Adji B. Dieng</strong>,
-          <a href="https://cims.nyu.edu/~rajeshr/">Rajesh Ranganath</a>,
-          <a href="https://jaan.io/">Jaan Altosaar</a>,
-          <a href="http://www.cs.columbia.edu/~blei/">David M. Blei</a> <br>
-        <em>International Conference on Machine Learning (ICLR), 2018</em> <br><D-r>
-        <a href="https://arxiv.org/abs/1805.01500">arxiv</a>
-        /
-        <a href="Papers/noisin_slides.pdf">Slides</a>
-        </p>
-        <p>Recurrent neural networks are very effective at modeling sequential data. However they tend to have very high capacity and overfit very easily. We propose a new regularization method called Noisin. Noisin relies on the notion of "unbiased" noise injection. Noisin is an explicit regularizer--it's objective function can be decomposed as the original objective for the deterministic RNN and a non-negative data-dependent term. Noisin significantly outperforms Dropout on both the Penn TreeBank and the Wikitext-2 datasets on a language modeling task. </p>
-      </td>
-    </tr>
-
-    <tr>
-      <td width="25%">
-        <img src='Images/a_and_r.png' width="280" height="130">
-      </td>
-      <td valign="top" width="75%">
-        <p>
-	  <a href="Papers/augment-reduce.pdf">
-            <papertitle>Augment and Reduce: Stochastic Inference for Large Categorical Distributions</papertitle>
-	  </a>
-	  <br>
-          <a href="http://franrruiz.github.io/index.html">Francisco J. R. Ruiz</a>,
-	  <a href="http://www2.aueb.gr/users/mtitsias/">Michalis Titsias</a>,
-	  <strong>Adji B. Dieng</strong>,
-          <a href="http://www.cs.columbia.edu/~blei/">David M. Blei</a> <br>
-        <em>International Conference on Machine Learning (ICML), 2018</em> <br>
-        <a href="https://arxiv.org/abs/1802.04220">arxiv</a>
-        /
-        <a href="Papers/a_and_r_slides.pdf">Slides</a>
-        /
-        <a href="https://github.com/franrruiz/augment-reduce">Code</a>
-        </p>
-        <p>Categorical distributions are ubiquitous in Statistics and Machine Learning. One wide parameterization of a categorical distribution is the softmax. However softmax does not scale well when there are many categories. We propose a method called A&R that scales learning with categorical distributions. A&R is built on two ideas: latent variable augmentation and stochastic variational expectation maximization.</p>
-      </td>
-    </tr>
-		
-    <tr>
-      <td width="25%">
-        <img src='Images/topicrnn.png' width="280" height="230">
-      </td>
-      <td valign="top" width="75%">
-       <p>
-        <a href="Papers/topicrnn.pdf">
-        <papertitle>TopicRNN: A Recurrent Neural Network With Long-Range Semantic Dependency</papertitle>
-        </a>
-        <br>
-        <strong>Adji B. Dieng</strong>,
-        <a href="http://">Chong Wang</a>,
-        <a href="https://www.microsoft.com/en-us/research/people/jfgao/">Jianfeng Gao</a>,
-        <a href="http://www.columbia.edu/~jwp2128/">John Paisley</a>,<br>
-        <em>International Conference on Learning Representations (ICLR), 2017 </em> <br>
-        <a href="https://arxiv.org/abs/1611.01702">arxiv</a> /
-        <a href="Papers/topicrnn_poster.pdf">Poster</a>
-        /
-        <a href="Papers/topicrnn_slides.pdf">Slides</a>
-        </p>
-        <p>One challenge in modeling sequential data with RNNs is the inability to capture long-term dependencies. In natural language these long-term dependencies come in the form of semantic dependencies. TopicRNN is a deep generative model of language that marries RNNs and topic models to capture long-term dependencies. The RNN component of the model captures syntax while the topic model component captures semantic. The topic model and the RNN parameters are learned jointly using amortized variational inference.</p>
-      </td>
-    </tr>
-
-    <tr>
-      <td width="25%">
-        <img src='Images/sandwich.png' width="280" height="230">
-      </td>
-      <td valign="top" width="75%">
-        <p><a href="Papers/chivi.pdf">
-          <papertitle>Variational Inference via Chi Upper Bound Minimization</papertitle></a><br>
-          <strong>Adji B. Dieng</strong>,
-          <a href="http://dustintran.com/">Dustin Tran</a>,
-          <a href="https://cims.nyu.edu/~rajeshr/">Rajesh Ranganath</a>,
-          <a href="http://www.columbia.edu/~jwp2128/">John Paisley</a>,
-          <a href="http://www.cs.columbia.edu/~blei/">David M. Blei</a> <br>
-          <em>Neural Information Processing Systems (NIPS), 2017</em> <br>
-         <a href="https://arxiv.org/abs/1611.00328">arxiv</a> 
-        /<D-r>
-        <a href="Papers/chivi_poster.pdf">Poster</a>
-        /
-        <a href="Papers/chivi_slides.pdf">Slides</a>
-        <p>Variational inference is an efficient approach for estimating posterior distributions. It consists in positing a family of distributions and finding the distribution in this family that better approximates the true posterior. The criterion for learning is a divergence measure. The most used divergence is the Kullback-Leibler (KL) divergence. However minimizing the KL leads to approximations that underestimate posterior uncertainty. Our paper proposes the Chi-divergence for variational inference. This divergence leads to an upper bound of the model evidence (called CUBO) and overdispersed posterior approximations. CUBO can be used alongside the usual ELBO to sandwich-estimate the model evidence.</p>
-        </td>
-      </tr>
-
-     <tr >
-      <td width="25%">
-      <img src="Images/edward.png" width="200" height="200">
-      </td>
-      <td valign="top" width="75%">
-        <p>
-          <a href="Papers/edward.pdf">
-            <papertitle>Edward: A Library for Probabilistic Modeling, Inference, and Criticism</papertitle>
-          </a>
-          <br>
-	  <a href="http://dustintran.com">Dustin Tran</a>,
-	  <a href="">Alp Kucukelbir</a>,
-          <strong>Adji B. Dieng</strong>,
-	  <a href="http://maja-rita-rudolph.com">Maja Rudolph</a>,
-	  <a href="http://dawenl.github.io">Dawen Liang</a>,
-          <a href="http://www.cs.columbia.edu/~blei/">David M. Blei</a>	<br>	
-        <a href="https://arxiv.org/abs/1610.09787">arxiv</a>
-        </p>
-        <p>A tensorflow-based library for probabilistic programming.</p>
-      </td>
-    </tr>
-
        </table>
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="25">
       <tr>
@@ -504,19 +388,10 @@ at <a href="http://columbia.edu">Columbia University</a>. I am being advised by 
         <td width="25%"><img src="Images/teaching.jpg" alt="pacman" width="180" height="180"></td>
         <td width="75%" valign="right">
         <p>
-          <papertitle>Statistical Machine Learning - Spring 2019</papertitle>
+          <papertitle>Thermodynamics and Phase Equilibria - Spring 2019</papertitle>
           <br><br>
-          <papertitle>Advanced Data Analysis - Fall 2017</papertitle>
+          <papertitle>Electronic and Magnetic Properties of Materials - Fall 2018</papertitle>
           <br><br>
-          <papertitle>Statistical Methods for Finance - Spring 2016</papertitle>
-          <br><br>
-          <papertitle>Probability and Statistics for Data Science - Fall 2015</papertitle>
-          <br><br>
-          <papertitle>Linear Regression Models - Spring 2015</papertitle>
-          <br><br>
-          <papertitle>Probability - Fall 2014</papertitle>
-          <br>
-
         </p>
         </td>
       </tr>
