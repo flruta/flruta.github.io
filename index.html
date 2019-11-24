@@ -269,109 +269,20 @@ at <a href="http://columbia.edu">Columbia University</a>. I am being advised by 
     </a>
     <br>
           <strong>Francesco L. Ruta</strong>,
-          <a href="http://franrruiz.github.io/index.html">Francisco R. J. Ruiz</a>,
-          <a href="http://www.cs.columbia.edu/~blei/">David M. Blei</a>,
-          <a href="http://www2.aueb.gr/users/mtitsias/">Michalis Titsias</a>
+          <a href="http://franrruiz.github.io/index.html">Stephanie Lam</a>,
+          <a href="http://www.cs.columbia.edu/~blei/">John Fiala</a>,
+          <a href="http://www2.aueb.gr/users/mtitsias/">Shariar Motakef</a>
     <br>
-        <em>Under submission at Journal of Machine Learning Research</em>  <br>
+        <em>Nuclear Instruments and Methods A</em>  <br>
         <a href="https://arxiv.org/abs/1910.04302">arxiv</a>
         /
         <a href="https://github.com/adjidieng/PresGANs">Code</a>
          / 
         </p>
-        <p>This paper describes a solution to two important problems in the GAN literature: (1) How can we maximize the entropy of the generator of a GAN to prevent mode collapse? (2) How can we evaluate predictive log-likelihood for GANs to assess how they generalize to new data? Key ingredients: noise, entropy regularization, and Hamiltonian Monte Carlo. </p>
+        <p>This paper </p>
       </td>
     </tr>
 
-    <tr>
-      <td width="25%">
-        <img src='Images/rem.png' width="280" height="250">
-      </td>
-      <td valign="top" width="75%">
-        <p>
-    <a href="Papers/REM.pdf">
-            <papertitle>Reweighted Expectation Maximization</papertitle>
-    </a>
-    <br>
-          <strong>Adji B. Dieng</strong>,
-          <a href="http://www.columbia.edu/~jwp2128/">John Paisley</a> <br>
-        <em>Under submission at Journal of Machine Learning Research</em>  <br>
-        <a href="https://arxiv.org/abs/1906.05850">arxiv</a>
-        /
-        <a href="https://github.com/adjidieng/REM">Code</a>
-         / 
-        </p>
-        <p>Maximum likelihood in deep generative models is hard. The typical workaround is variational inference (VI) which maximizes a lower bound to the log marginal likelihood of the data. VI introduces an undesirable amortization gap and often causes latent variable collapse. We propose to use expectation maximization (EM) instead. Importantly, we separate posterior inference and model fitting. To fit the model we leverage moment matching to learn rich proposals to estimate the EM objective. Posterior inference is done after the model is fitted. This two-step procedure shies away from the current VAE approach of bundling together model fitting and posterior inference. Turns out EM learns better deep generative models than VI as measured by predictive log-likelihood.</p>
-      </td>
-    </tr>
-
-    <tr>
-      <td width="25%">
-        <img src='Images/detm.png' width="280" height="220">
-      </td>
-      <td valign="top" width="75%">
-        <p>
-    <a href="Papers/DETM.pdf">
-            <papertitle>The Dynamic Embedded Topic Model</papertitle>
-    </a>
-    <br>
-          <strong>Adji B. Dieng*</strong>,
-          <a href="http://franrruiz.github.io/index.html">Francisco R. J. Ruiz*</a>,
-          <a href="http://www.cs.columbia.edu/~blei/">David M. Blei</a> <br>
-        <em>Submitted to International Conference on Artificial Intelligence and Statistics (AISTATS), 2020</em>  <br>
-        <a href="https://arxiv.org/abs/1907.05545">arxiv</a>
-        /
-        <a href="https://github.com/adjidieng/DETM">Code</a>
-         / 
-        </p>
-        <p>An extension of the Embedded Topic Model to corpora with temporal dependencies. The DETM models each word with a categorical distribution whose parameter is given by the inner product between the word embedding and an embedding representation of its assigned topic at a particular time step. The word embeddings allow the DETM to generalize to rare words. The DETM learns smooth topic trajectories by defining a random walk prior over the embeddings of the topics. The DETM is fit using structured amortized variational inference with LSTMs.</p>
-      </td>
-    </tr>
-
-    <tr>
-      <td width="25%">
-        <img src='Images/etm.png' width="280" height="250">
-      </td>
-      <td valign="top" width="75%">
-        <p>
-    <a href="Papers/ETM.pdf">
-            <papertitle>Topic Modeling in Embedding Spaces</papertitle>
-    </a>
-    <br>
-          <strong>Adji B. Dieng</strong>,
-          <a href="http://franrruiz.github.io/index.html">Francisco R. J. Ruiz</a>,
-          <a href="http://www.cs.columbia.edu/~blei/">David M. Blei</a> <br>
-        <em>Under review at Transactions of the Association for Computational Linguistics (TACL), 2019</em>  <br>
-        <a href="https://arxiv.org/abs/1907.04907">arxiv</a>
-        /
-        <a href="https://github.com/adjidieng/ETM">Code</a>
-         / 
-        </p>
-        <p>Define words and topics in the same embedding space. Form a generative model of documents that defines the likelihood of a word as a Categorical whose natural parameter is the dot product between the word embedding and its assigned topic's embedding. The resulting Embedded Topic Model (ETM) learns interpretable topics and word embeddings and is robust to large vocabularies that include rare words and stop words.</p>
-      </td>
-    </tr>
-
-    <tr>
-      <td width="25%">
-        <img src='Images/skipvae.png' width="280" height="250">
-      </td>
-      <td valign="top" width="75%">
-        <p>
-	  <a href="Papers/skipvae.pdf">
-            <papertitle>Avoiding Latent Variable Collapse with Generative Skip Models</papertitle>
-	  </a>
-	  <br>
-          <strong>Adji B. Dieng</strong>,
-          <a href="http://www.people.fas.harvard.edu/~yoonkim/">Yoon Kim</a>,
-          <a href="http://nlp.seas.harvard.edu/rush.html">Alexander M. Rush</a>,
-          <a href="http://www.cs.columbia.edu/~blei/">David M. Blei</a> <br>
-        <em>International Conference on Artificial Intelligence and Statistics (AISTATS), 2019</em> (Submitted) <br>
-        <a href="https://arxiv.org/abs/1807.04863">arxiv</a>
-         / 
-        </p>
-        <p>One of the current staples of unsupervised representation learning is variational autoencoders (VAEs). However they suffer from a problem known as "latent variable collapse". Our paper proposes a simple solution that relies on skip connections. This solution leads to the Skip-VAE--a deep generative model that avoids latent variable collapse. The decoder of a Skip-VAE is a neural network whose hidden states--at every layer--condition on the latent variables. This results in a stronger dependence between observations and their latents and therefore avoids latent variable collapse.</p>
-      </td>
-    </tr>
 
        </table>
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="25">
